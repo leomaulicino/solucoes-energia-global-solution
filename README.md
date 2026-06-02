@@ -1,8 +1,9 @@
 # Soluções em Energia - Global Solution
 
-> **FIAP - Global Solution 2026**
-> **Disciplina:** Soluções em Energias Renováveis e Sustentáveis  
-> **Curso:** Ciência da Computação (1CC)  
+> **FIAP - Global Solution 2026**  
+> **Disciplina:** Soluções em Energias Renováveis e Sustentáveis 
+> **Integrantes:** Enzo Caruso Peter, RM: 570908/Leonardo Robert Maulicino, RM: 570329/Lucas Ramos de Sousa, RM:573901 
+> **Curso:** Ciência da Computação (1CCPG)  
 > **Repositório:** solucoes-energia-global-solution  
 
 ---
