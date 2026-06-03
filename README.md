@@ -1,4 +1,4 @@
-# Eco-Orbiter Energy Smart Grid (EOSG) 
+# Eco-Orbiter Energy Smart Grid (EOSG)
 ### Sistema Inteligente de Monitoramento e Telemetria Energética Espacial
 
 ---
@@ -8,8 +8,8 @@
 * **Leonardo Robert Maulicino** - RM: 570329
 * **Lucas Ramos de Sousa** - RM: 573901
 
-**Curso:** Ciência da Computação  
-**Turma:** 1CCPG  
+**Curso:** Ciência da Computação
+**Turma:** 1CCPG
 **Instituição:** FIAP (Global Solution 2026)
 
 ---
@@ -67,59 +67,64 @@ O script principal está estruturado de forma modular e fortemente tipada:
 ### Passos para Execução
 1. Abra o terminal do seu sistema operacional.
 2. Clone este repositório utilizando a URL abaixo (substitua pelo link do seu repositório):
+```bash
 git clone https://github.com/leomaulicino/solucoes-energia-global-solution.git
-3.  Acesse a pasta do projeto descarregada: cd solucoes-energia-global-solution
-4. Execute o script principal do monitor: python main.py
+```
+3. Acesse a pasta do projeto descarregada: cd solucoes-energia-global-solution
+4. Execute o script principal do monitor:
+```bash
+python main.py
+```
 
 ---
 
 ### Exemplo de saída no terminal
 
- TRANSMISSÃO DE TELEMETRIA - CICLO OPERACIONAL 03
+TRANSMISSÃO DE TELEMETRIA - CICLO OPERACIONAL 03
 
 [DADOS DE SENSORES RECEBIDOS]:
-  -> Temperatura Sistema Fotovoltaico : 48 °C
-  -> Intensidade do Link de Sinal     : 55 %
-  -> Capacidade Banco de Baterias     : 50 %
-  -> Concentração de Oxigênio (S.V)  : 74 %
-  -> Estabilidade da Smart Grid       : 65 %
+-> Temperatura Sistema Fotovoltaico : 48 °C
+-> Intensidade do Link de Sinal : 55 %
+-> Capacidade Banco de Baterias : 50 %
+-> Concentração de Oxigênio (S.V) : 74 %
+-> Estabilidade da Smart Grid : 65 %
 
 [ANÁLISE DE SUBSISTEMAS]:
-  CRÍTICO: Risco de degradação severa das células fotovoltaicas.
-  ALERTA: Link de comunicação instável com a base.
-  ALERTA: Geração solar insuficiente para a demanda.
-  ALERTA: Pico de consumo energético no módulo de oxigênio.
-  ALERTA: Micro-oscilações de tensão detectadas na distribuição.
+CRÍTICO: Risco de degradação severa das células fotovoltaicas.
+ALERTA: Link de comunicação instável com a base.
+ALERTA: Geração solar insuficiente para a demanda.
+ALERTA: Pico de consumo energético no módulo de oxigênio.
+ALERTA: Micro-oscilações de tensão detectadas na distribuição.
 
 [MATRIZ DE RESPOSTA AUTOMATIZADA (ATUADORES)]:
-  * Refrigeração Ativa                 : [ATIVADO - MITIGANDO ANOMALIA]
-  * Load Shedding (Corte de Cargas)    : [ATIVADO - MITIGANDO ANOMALIA]
-  * Modulação de Sinal de Dados        : [ATIVADO - MITIGANDO ANOMALIA]
+* Refrigeração Ativa : [ATIVADO - MITIGANDO ANOMALIA]
+* Load Shedding (Corte de Cargas) : [ATIVADO - MITIGANDO ANOMALIA]
+* Modulação de Sinal de Dados : [ATIVADO - MITIGANDO ANOMALIA]
 
 [IA INTRODUTÓRIA - MODELO DE TENDÊNCIA DE ENERGIA]:
-  ALERTA: Tendência de descarga moderada (-17.5% por ciclo). Monitorar cargas.
+ALERTA: Tendência de descarga moderada (-17.5% por ciclo). Monitorar cargas.
 
 [RISCO INTEGRADO DA MISSÃO]:
-  Nível: ALTO / CRÍTICO (Intervenção Automática Requerida)
+Nível: ALTO / CRÍTICO (Intervenção Automática Requerida)
 
-  ... (Ciclos operacionais subsequentes em execução) ...
+... (Ciclos operacionais subsequentes em execução) ...
 
-               RELATÓRIO DE DIAGNÓSTICO FINAL DA MISSÃO (EOSG)
+RELATÓRIO DE DIAGNÓSTICO FINAL DA MISSÃO (EOSG)
 
- Tendência Operacional Global : OTIMIZADA (Os algoritmos de Smart Grid controlaram as flutuações com sucesso).
- Subsistema Mais Instável     : Térmico (3 falhas detectadas)
- Vetor de Maior Severidade    : Térmico (Impacto crítico acumulado)
- Coeficiente Angular da IA    : -4.00% de variação média de carga/ciclo
+Tendência Operacional Global : OTIMIZADA (Os algoritmos de Smart Grid controlaram as flutuações com sucesso).
+Subsistema Mais Instável : Térmico (3 falhas detectadas)
+Vetor de Maior Severidade : Térmico (Impacto crítico acumulado)
+Coeficiente Angular da IA : -4.00% de variação média de carga/ciclo
 
 [ANÁLISE DE VOLUMETRIA DE FALHAS]:
-  - Térmico         : 3 ocorrência(s) ###
-  - Transmissão     : 2 ocorrência(s) ##
-  - Baterias        : 1 ocorrência(s) #
-  - Ambiental       : 1 ocorrência(s) #
-  - Rede Elétrica   : 1 ocorrência(s) #
+- Térmico : 3 ocorrência(s) ###
+- Transmissão : 2 ocorrência(s) ##
+- Baterias : 1 ocorrência(s) #
+- Ambiental : 1 ocorrência(s) #
+- Rede Elétrica : 1 ocorrência(s) #
 
 [DIRETRIZES DE ENGENHARIA RECOMENDADAS]:
-  -> Priorizar manutenção preditiva nos revestimentos de isolamento multicamadas (MLI).
-  -> Alocar rotina de desacoplamento de telemetrias secundárias para evitar colapso na Smart Grid.
+-> Priorizar manutenção preditiva nos revestimentos de isolamento multicamadas (MLI).
+-> Alocar rotina de desacoplamento de telemetrias secundárias para evitar colapso na Smart Grid.
 
- SUCESSO: Os atuadores inteligentes contiveram as anomalias climáticas do espaço profundo.
+SUCESSO: Os atuadores inteligentes contiveram as anomalias climáticas do espaço profundo.
