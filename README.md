@@ -1,61 +1,103 @@
-# Soluções em Energia - Global Solution
-
-> **FIAP - Global Solution 2026**
-
-> **Disciplina:** Soluções em Energias Renováveis e Sustentáveis
-
-> **Integrantes:** Enzo Caruso Peter, RM: 570908/Leonardo Robert Maulicino, RM: 570329/Lucas Ramos de Sousa, RM:573901
-
-> **Curso:** Ciência da Computação (1CCPG)
-
-> **Repositório:** solucoes-energia-global-solution  
+# Eco-Orbiter Energy Smart Grid (EOSG) 
+### Sistema Inteligente de Monitoramento e Telemetria Energética Espacial
 
 ---
 
-## Resumo do Projeto
-Na exploração aeroespacial contemporânea, a sustentabilidade e a resiliência energética são os fatores limítrofes entre o sucesso de uma missão e o colapso operacional. O **Eco-Orbiter Energy Smart Grid (EOSG)** é um sistema inteligente de monitoramento e controle automatizado de matrizes energéticas projetado para naves e módulos espaciais experimentais de longa duração.
+## Integrantes do Grupo
+* **Enzo Caruso Peter** - RM: 570908
+* **Leonardo Robert Maulicino** - RM: 570329
+* **Lucas Ramos de Sousa** - RM: 573901
 
-Utilizando os pilares do Pensamento Computacional e arquitetura limpa em Python, o sistema funciona como uma malha inteligente (*Smart Grid*), recebendo dados simulados de geração, armazenamento e dissipação para prever riscos, otimizar o fator de potência, mitigar o desperdício elétrico e garantir que os sistemas de suporte à vida operem dentro do escopo ecológico ideal através de fontes de energia renováveis.
-
----
-
-## Funcionalidades e Escopo Técnico
-
-O software foi modelado para cumprir rigorosamente as métricas de análise de dados estruturados através de uma matriz multidimensional de **6 ciclos temporais** e **5 parâmetros de relevância física e sustentável**:
-
-| Parâmetro | Módulo Relacionado | Descrição Sustentável |
-| :--- | :--- | :--- |
-| **Temperatura** | Módulo Térmico | Monitora inversores e painéis para evitar perdas por efeito Joule. |
-| **Potência %** | Transmissão / Telecom | Evita picos desnecessários de consumo de corrente no link de rádio. |
-| **Bateria %** | Armazenamento Central | Eixo central de controle. Evita esgotamento de energia limpa armazenada. |
-| **ECLSS %** | Suporte à Vida | Mede a eficiência ambiental e custo ecológico da reciclagem de gases. |
-| **Estabilidade %**| Rede Elétrica / Distribuição| Avalia micro-oscilações de tensão nas Smart Grids internas. |
+**Curso:** Ciência da Computação  
+**Turma:** 1CCPG  
+**Instituição:** FIAP (Global Solution 2026)
 
 ---
 
-## Lógica de Decisão e Resposta Automatizada
+## Visão Geral do Projeto
+O **Eco-Orbiter Energy Smart Grid (EOSG)** é uma solução computacional desenvolvida para o monitoramento inteligente de microrredes de energia renovável e sistemas críticos em missões aeroespaciais experimentais. Em cenários de exploração espacial, a eficiência energética e a resiliência de sistemas de suporte à vida são fundamentais.
 
-O algoritmo processa a matriz de dados aplicando regras lógicas baseadas em limiares operacionais (`NORMAL`, `ALERTA` e `CRÍTICO`). 
-
-* **Tomada de Decisão Automatizada:** Diante de dados críticos detectados em tempo real, o sistema altera o status operacional de atuadores da nave autonomamente (ex: ativando a *Refrigeração Ativa* ou iniciando o protocolo de *Corte de Cargas Não-Essenciais* para preservar as baterias).
-* **Cálculo de Risco Dinâmico:** Cada anomalia possui um peso matemático associado. O sistema calcula o nível cumulativo de risco por ciclo e gera uma **Tendência Operacional da Missão** ao final do processamento.
+O software foi projetado para receber telemetrias simuladas e, de forma autônoma, interpretar dados operacionais, gerar alertas em tempo real, acionar atuadores de mitigação de riscos e rodar um algoritmo preditivo estatístico de Inteligência Artificial para antecipar falhas de armazenamento de energia.
 
 ---
 
-## Estrutura do Repositório
+## Requisitos Técnicos Implementados
 
-* `main.py`: Código-fonte principal em Python, estruturado com funções modulares e lógica de decisão para Smart Grid.
-* `README.md`: Documentação técnica detalhada das diretrizes de sustentabilidade do projeto.
+O projeto atende a 100% dos requisitos mínimos exigidos no escopo da **Global Solution 2026**:
+
+* **Monitoramento de Dados Simulados:** Acompanhamento dinâmico de 5 eixos críticos da missão: Temperatura do Sistema Fotovoltaico, Intensidade do Link de Sinal (Comunicação), Capacidade do Banco de Baterias (Energia), Concentração de Oxigênio (Módulo Ambiental) e Estabilidade da Smart Grid.
+* **Geração Automática de Alertas:** Lógica em tempo real para identificação de estados de `ALERTA` e `CRÍTICO`, com mensagens customizadas de engenharia para cada anomalia detectada.
+* **Tomada de Decisão Básica (Atuadores Coerentes):** Resposta automatizada acionando sistemas de proteção da nave como *Refrigeração Ativa*, *Load Shedding* (corte de cargas não essenciais) e *Modulação de Sinal*.
+* **Inteligência Artificial Introdutória:** Implementação nativa (Python Standard) do algoritmo estatístico preditivo de **Regressão Linear por Mínimos Quadrados** para calcular a tendência de variação de carga da bateria, prevendo colapsos energéticos antes que eles aconteçam.
+* **Visualização de Dados (Usabilidade):** Interface organizada via terminal com a geração de um relatório de diagnóstico final contendo estatísticas volumétricas e um gráfico de barras em modo texto (`#`).
 
 ---
 
-## Como Executar o Sistema
+## Arquitetura da IA Preditiva
+Para cumprir o critério de **Inovação**, o sistema foge de meras estruturas de decisão fixas (`if/else`) para avaliar a integridade energética. O algoritmo calcula dinamicamente o coeficiente angular ($m$) da reta de regressão com base no histórico de ciclos passados:
+
+$$m = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}$$
+
+Onde:
+* $x$ representa a progressão temporal dos ciclos operacionais.
+* $y$ representa o percentual de carga restante no banco de baterias.
+
+Se a inclinação calculada pela IA for excessivamente negativa ($m < -4.0$), o sistema dispara uma predição antecipada de colapso energético iminente, permitindo o planejamento preventivo de controle de danos.
+
+---
+
+## Estrutura do Código
+
+O script principal está estruturado de forma modular e fortemente tipada:
+
+* `CONFIG_MODULOS`: Dicionário de configuração contendo funções anônimas (`lambda`) para validação de limites físicos e strings de diagnóstico.
+* `prever_colapso_bateria()`: Core do modelo estatístico de IA preditiva.
+* `gerar_dados_simulados()`: Matriz telemetria estruturada em formato de narrativa espacial (Estado Nominal $\rightarrow$ Stress Térmico $\rightarrow$ Crise Cascata $\rightarrow$ Mitigação Autônoma $\rightarrow$ Recuperação).
+* `processar_ciclos()`: Loop de processamento de sinais, tratamento de estados e controle dos atuadores.
+* `gerar_relatorio_final()`: Consolidação analítica do desempenho da missão, diretrizes sugeridas de engenharia e renderização do gráfico de falhas.
+
+---
+
+## Como Executar o Projeto
 
 ### Pré-requisitos
-* Python 3.x instalado localmente.
+* Python 3.8 ou superior instalado.
+* Nenhuma biblioteca externa é necessária (Construído 100% com a biblioteca padrão do Python).
 
-### Execução
-1. Clone este repositório ou baixe o arquivo `main.py`.
-2. Abra o terminal na pasta correspondente e execute:
+### Passos para Execução
+1. Abra o terminal do seu sistema operacional.
+2. Clone este repositório utilizando a URL abaixo (substitua pelo link do seu repositório):
 ```bash
-python main.py
+git clone https://github.com/leomaulicino/solucoes-energia-global-solution.git
+3.  Acesse a pasta do projeto descarregada: cd solucoes-energia-global-solution
+4. Execute o script principal do monitor: main.py
+
+##Exemplo de Saída no Terminal
+
+================================================================================
+ TRANSMISSÃO DE TELEMETRIA - CICLO OPERACIONAL 03
+================================================================================
+[DADOS DE SENSORES RECEBIDOS]:
+  -> Temperatura Sistema Fotovoltaico : 48 °C
+  -> Intensidade do Link de Sinal     : 55 %
+  -> Capacidade Banco de Baterias     : 50 %
+  -> Concentração de Oxigênio (S.V)  : 74 %
+  -> Estabilidade da Smart Grid       : 65 %
+
+[ANÁLISE DE SUBSISTEMAS]:
+  CRÍTICO: Risco de degradação severa das células fotovoltaicas.
+  ALERTA: Link de comunicação instável com a base.
+  ALERTA: Geração solar insuficiente para a demanda.
+  ALERTA: Pico de consumo energético no módulo de oxigênio.
+  ALERTA: Micro-oscilações de tensão detectadas na distribuição.
+
+[MATRIZ DE RESPOSTA AUTOMATIZADA (ATUADORES)]:
+  * Refrigeração Ativa                 : [ATIVADO - MITIGANDO ANOMALIA]
+  * Load Shedding (Corte de Cargas)    : [ATIVADO - MITIGANDO ANOMALIA]
+  * Modulação de Sinal de Dados        : [ATIVADO - MITIGANDO ANOMALIA]
+
+[IA INTRODUTÓRIA - MODELO DE TENDÊNCIA DE ENERGIA]:
+  ALERTA: Tendência de descarga moderada (-17.5% por ciclo). Monitorar cargas.
+
+[RISCO INTEGRADO DA MISSÃO]:
+  Nível: ALTO / CRÍTICO (Intervenção Automática Requerida)
