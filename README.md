@@ -67,7 +67,6 @@ O script principal está estruturado de forma modular e fortemente tipada:
 ### Passos para Execução
 1. Abra o terminal do seu sistema operacional.
 2. Clone este repositório utilizando a URL abaixo (substitua pelo link do seu repositório):
-```bash
 git clone https://github.com/leomaulicino/solucoes-energia-global-solution.git
 3.  Acesse a pasta do projeto descarregada: cd solucoes-energia-global-solution
 4. Execute o script principal do monitor: main.py
