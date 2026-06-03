@@ -69,13 +69,14 @@ O script principal está estruturado de forma modular e fortemente tipada:
 2. Clone este repositório utilizando a URL abaixo (substitua pelo link do seu repositório):
 git clone https://github.com/leomaulicino/solucoes-energia-global-solution.git
 3.  Acesse a pasta do projeto descarregada: cd solucoes-energia-global-solution
-4. Execute o script principal do monitor: main.py
+4. Execute o script principal do monitor: python main.py
 
-##Exemplo de Saída no Terminal
+---
 
-================================================================================
+### Exemplo de saída no terminal
+
  TRANSMISSÃO DE TELEMETRIA - CICLO OPERACIONAL 03
-================================================================================
+
 [DADOS DE SENSORES RECEBIDOS]:
   -> Temperatura Sistema Fotovoltaico : 48 °C
   -> Intensidade do Link de Sinal     : 55 %
@@ -100,3 +101,25 @@ git clone https://github.com/leomaulicino/solucoes-energia-global-solution.git
 
 [RISCO INTEGRADO DA MISSÃO]:
   Nível: ALTO / CRÍTICO (Intervenção Automática Requerida)
+
+  ... (Ciclos operacionais subsequentes em execução) ...
+
+               RELATÓRIO DE DIAGNÓSTICO FINAL DA MISSÃO (EOSG)
+
+ Tendência Operacional Global : OTIMIZADA (Os algoritmos de Smart Grid controlaram as flutuações com sucesso).
+ Subsistema Mais Instável     : Térmico (3 falhas detectadas)
+ Vetor de Maior Severidade    : Térmico (Impacto crítico acumulado)
+ Coeficiente Angular da IA    : -4.00% de variação média de carga/ciclo
+
+[ANÁLISE DE VOLUMETRIA DE FALHAS]:
+  - Térmico         : 3 ocorrência(s) ###
+  - Transmissão     : 2 ocorrência(s) ##
+  - Baterias        : 1 ocorrência(s) #
+  - Ambiental       : 1 ocorrência(s) #
+  - Rede Elétrica   : 1 ocorrência(s) #
+
+[DIRETRIZES DE ENGENHARIA RECOMENDADAS]:
+  -> Priorizar manutenção preditiva nos revestimentos de isolamento multicamadas (MLI).
+  -> Alocar rotina de desacoplamento de telemetrias secundárias para evitar colapso na Smart Grid.
+
+ SUCESSO: Os atuadores inteligentes contiveram as anomalias climáticas do espaço profundo.
